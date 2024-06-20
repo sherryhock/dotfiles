@@ -1,0 +1,68 @@
+* {
+    background-image: none;
+    font-size: 22px;
+}
+
+@import "themes/Catppuccin/Mocha.css";
+
+window {
+    background-color: transparent;
+}
+
+button {
+    color: white;
+    background-color: @main-bg;
+    outline-style: none;
+    border: none;
+    border-width: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    border-radius: 0px;
+    box-shadow: none;
+    text-shadow: none;
+    animation: gradient_f 20s ease-in infinite;
+}
+
+button:focus {
+    background-color: @wb-act-bg;
+    background-size: 35%;
+    border-radius: 10px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,0.0,.28,1.682);
+}
+
+/* button:hover {
+    background-color: @wb-act-bg;
+    background-size: 30%;
+} */
+
+#lock {
+    background-image: image(url("/home/sherlock/.config/wlogout/icons/lock_white.png"));
+    border-radius: 20px 0px 0px 20px;
+}
+
+#windows {
+    background-image: image(url("/home/sherlock/.config/wlogout/icons/logout_white.png"));
+    border-radius: 0px 0px 0px 0px;
+}
+
+#suspend {
+    background-image: image(url("/home/sherlock/.config/wlogout/icons/suspend_white.png"));
+    border-radius: 0px 0px 0px 0px;
+}
+
+#shutdown {
+    background-image: image(url("/home/sherlock/.config/wlogout/icons/shutdown_white.png"));
+    border-radius: 0px 0px 0px 0px;
+}
+
+#hibernate {
+    background-image: image(url("/home/sherlock/.config/wlogout/icons/hibernate_white.png"));
+    border-radius: 0px 0px 0px 0px;
+}
+
+#reboot {
+    background-image: image(url("/home/sherlock/.config/wlogout/icons/reboot_white.png"));
+    border-radius: 0px 20px 20px 0px;
+}
