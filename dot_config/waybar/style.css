@@ -1,0 +1,152 @@
+* {
+    font-family: "FiraCode Nerd Font, MonoLisa Variable";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@import "theme.css";
+
+tooltip {
+    border-radius: 15px;
+    padding: 15px;
+    background-color: @base;
+}
+
+tooltip label {
+    padding: 5px;
+}
+
+#tray > .passive {
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+
+window#waybar {
+    background-color: rgba(30, 30, 46, 0.5);
+    border-radius: 6px;
+    color: @text;
+    transition-property: backgroud-color;
+    transition-duration: 0.5s;
+}
+
+.modules-left:first-child {
+    margin-left: 12px;
+}
+
+.modules-right:last-child {
+    margin-right: 12px;
+}
+
+/*
+tooltip {
+    background: @main-bg;
+    color: @main-fg;
+    border-radius: 7px;
+    border-width: 0px;
+}
+
+#taskbar {
+    margin-right: 16px;
+}
+*/
+
+#workspaces {
+    background: transparent;
+    padding: 2px 0px;
+    margin: 8.5px 0px 8.5px 0px;
+    border-radius: 8px;
+    font-size: 18.5px;
+}
+
+#taskbar button,
+#workspaces button {
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+    background-color: transparent;
+    /* color: @main-fg; */
+    transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
+
+    /* animation: ws_normal 20s ease-in-out 1; */
+}
+
+#taskbar button.active,
+#workspaces button.active {
+    /* background: @wb-act-bg; */
+    color: @pacman-yellow;
+    /* padding-right: 8px; */
+    transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
+    /* animation: ws_normal 20s ease-in-out 1; */
+}
+
+#taskbar button:hover,
+#workspaces button:hover {
+    /* background: transparent; */
+    /* color: @wb-hvr-fg; */
+    /* animation: ws_normal 20s ease-in-out 1; */
+    /* transition: all 0.4s cubic-bezier(0.55, -0.68, 0.48, 1.682); */
+    box-shadow: none;
+    text-shadow: none;
+}
+
+/* workspaces testing */
+#workspaces button:nth-child(1):not(.active) {
+    color: @rosewater;
+}
+
+#workspaces button:nth-child(2):not(.active) {
+    color: @maroon;
+}
+
+#workspaces button:nth-child(3):not(.active) {
+    color: @sky;
+}
+
+#workspaces button:nth-child(4):not(.active) {
+    color: @mauve;
+}
+
+#workspaces button:nth-child(5):not(.active) {
+    color: @lavender;
+}
+
+#workspaces button:nth-child(6):not(.active) {
+    color: @sapphire;
+}
+
+#workspaces button:nth-child(7):not(.active) {
+    color: @teal;
+}
+
+#workspaces button:nth-child(8):not(.active) {
+    color: @blue;
+}
+
+#workspaces button:nth-child(9):not(.active) {
+    color: @sky;
+}
+
+#workspaces button:nth-child(10):not(.active) {
+    color: @mantal;
+}
+
+#cpu,
+#tray,
+#clock,
+#mpris,
+#memory,
+#window,
+#network,
+#battery,
+#backlight,
+#pulseaudio,
+#custom-weather {
+    margin: 8.5px 0px;
+    padding: 2px 0px;
+
+    font-size: 17px;
+
+    border-radius: 6px;
+}
