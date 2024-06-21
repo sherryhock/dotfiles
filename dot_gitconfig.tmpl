@@ -13,7 +13,11 @@
 	email = {{ .email | quote }}
 [credential "helperselector"]
 	selected = manager
+{{ if eq .chezmoi.os "windows" -}}
 [http]
 	proxy = http://127.0.0.1:10801
+{{ end -}}
+{{ if eq .chezmoi.os "windows" -}}
 [https]
 	proxy = http://127.0.0.1:10801
+{{ end -}}
