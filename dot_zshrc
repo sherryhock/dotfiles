@@ -19,8 +19,6 @@ source /usr/share/zsh/plugins/zsh-sudo/sudo.plugin.zsh
 # Plugin Command-not-found
 source /usr/share/doc/pkgfile/command-not-found.zsh
 
-# source ~/Git/zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
-
 # plugin highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -45,37 +43,29 @@ function zvm_config() {
 # init
 source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
-
-#############################################################################
-
-
-
-
-################################ VIM-MODE PLUGIN ############################
-function yy() {
-  local tmp="$(mktemp -t "yazi-cwd.XXXXXXX")"
-  yazi "$@" --cwd-file=$tmp
-  if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-	  cd -- "$cwd"
-  fi
-  rm -f -- "$tmp"
-}
-
 #############################################################################
 
 
 
 
 ##################################### Alias #################################
+
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias ll='ls -l'
 alias wlogout='wlogout -b 6 -c 0 -r 0 -m 0'
 
 #############################################################################
-# Keybinding
+
+
+
+
+################################# Keybinding ################################
+
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 
 bindkey -a 'gg' beginning-of-buffer-or-history
 bindkey -a 'G' end-of-buffer-or-history
+
+#############################################################################
