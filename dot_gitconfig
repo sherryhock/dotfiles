@@ -1,0 +1,19 @@
+[safe]
+	directory = A:/Scoop/apps/scoop/current
+	directory = A:/Scoop/buckets/sysinternals
+	directory = A:/Scoop/buckets/versions
+	directory = A:/Scoop/buckets/nonportable
+	directory = A:/Scoop/buckets/main
+	directory = A:/Scoop/buckets/java
+	directory = A:/Scoop/buckets/games
+	directory = A:/Scoop/buckets/extras
+	directory = A:/Projects/Rider/Italent
+[user]
+	name = Sherlock
+	email = remax2222@outlook.com
+[credential "helperselector"]
+	selected = manager
+[http]
+	proxy = http://127.0.0.1:10801
+[https]
+	proxy = http://127.0.0.1:10801
