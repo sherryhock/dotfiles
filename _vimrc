@@ -8,6 +8,12 @@ set relativenumber
 set laststatus=2
 set noshowmode
 
+" 缩进设置
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set autoindent
+set expandtab
 
 " 语法高亮
 syntax enable
