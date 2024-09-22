@@ -1,0 +1,29 @@
+autoload -U compinit; compinit
+
+zstyle ':completion:*' menu select
+zstyle ':completion:*:*:*:*:descriptions' format '%F{green}-- %d -- %f' 
+
+# options for zsh
+setopt AUTO_CD
+alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
+alias nvidia-settings --config="$XDG_CONFIG_HOME"/nvidia/settings
+
+# alias sshqms="ssh root@192.168.9.3"
+
+# some useful alias
+alias ls="ls -h --color='auto'"
+alias ll="ls -l"
+alias la="ls -a"
+alias lla="ls -la"
+
+alias grep="grep --color -rn"
+alias tree="tree -C"
+
+alias czkawka="czkawka-cli"
+
+eval "$(starship init zsh)"
+eval "$(sheldon source)"
+export PATH="$PATH:/home/sherlock/.local/share/dotnet/.dotnet/tools"
+
+# Created by `pipx` on 2024-09-19 12:13:06
+export PATH="$PATH:/home/sherlock/.local/bin"
