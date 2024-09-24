@@ -20,6 +20,7 @@ alias grep="grep --color -rn"
 alias tree="tree -C"
 
 alias czkawka="czkawka-cli"
+alias scrcpy="scrcpy -Sw --no-clipboard-autosync"
 
 eval "$(starship init zsh)"
 eval "$(sheldon source)"
