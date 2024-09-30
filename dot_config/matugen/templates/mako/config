@@ -1,0 +1,26 @@
+# Global Options
+max-history=6
+sort=-time
+
+# Style Options
+font=" MonoLisaVariable Nerd Font" 14
+background-color={{colors.background.default.hex}}cc
+text-color={{colors.on_background.default.hex}}
+width=450
+height=150
+margin=12
+padding=12,20
+border-size=2
+border-color={{colors.primary.default.hex}}
+border-radius=10
+progress-color=over #313244
+icons=1
+max-icon-size=64
+layer=overlay
+
+default-timeout=3000
+ignore-timeout=0
+
+[urgency=critical]
+border-color={{colors.tertiary_fixed.default.hex}}
+default-timeout=0

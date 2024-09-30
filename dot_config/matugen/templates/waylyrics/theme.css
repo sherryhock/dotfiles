@@ -1,0 +1,10 @@
+window#main-window {
+    background-color: rgba({{colors.background.default.red}},{{colors.background.default.green}},{{colors.background.default.blue}},0.8)
+}
+
+/* 歌词 */
+label#above, label#below {
+    font-size: 28px;
+    color: {{colors.on_background.default.rgba}};
+    padding: 10px;
+}

@@ -20,7 +20,7 @@ alias grep="grep --color -rn"
 alias tree="tree -C"
 
 alias czkawka="czkawka-cli"
-alias scrcpy="scrcpy -Sw --no-clipboard-autosync"
+alias scrcpy="scrcpy -Sw --no-clipboard-autosync --no-audio-playback"
 
 eval "$(starship init zsh)"
 eval "$(sheldon source)"
@@ -28,3 +28,11 @@ export PATH="$PATH:/home/sherlock/.local/share/dotnet/.dotnet/tools"
 
 # Created by `pipx` on 2024-09-19 12:13:06
 export PATH="$PATH:/home/sherlock/.local/bin"
+
+# 动态变更颜色
+TRAPUSR1() {
+    background=$(cat ~/.config/matugen/theme.json | jq -r ".background")
+    # foreground=$(cat ~/.config/matugen/theme.json | jq -r ".foreground")
+    printf "\e]11;[100]$background\e\\"
+    # printf "\e]4;1;$foreground\e\\"
+}
